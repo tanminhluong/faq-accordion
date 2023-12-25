@@ -1,5 +1,10 @@
 const faqItems = document.querySelectorAll(".faq-item");
 
+window.onload = function () {
+  const firstAnswer = document.querySelector(".faq-item p");
+  firstAnswer.style.maxHeight = firstAnswer.scrollHeight + "px";
+};
+
 function handleClick() {
   this.classList.toggle("active");
   var panel = this.children[1];
