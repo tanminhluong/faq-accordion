@@ -81,9 +81,12 @@ main img {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  margin-bottom: 20px;
 
   cursor: pointer;
+}
+
+.faq-item.active .faq-item__title {
+  margin-bottom: 20px;
 }
 
 .faq-item__title h3 {

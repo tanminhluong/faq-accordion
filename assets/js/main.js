@@ -3,6 +3,15 @@ const faqItems = document.querySelectorAll(".faq-item");
 window.onload = function () {
   const firstAnswer = document.querySelector(".faq-item p");
   firstAnswer.style.maxHeight = firstAnswer.scrollHeight + "px";
+  faqItems[0].classList.add("active");
+  const firstPlusIcon = faqItems[0].querySelector(
+    ".faq-item__title .faq-item__action .icon-plus"
+  );
+  const firstMinusIcon = faqItems[0].querySelector(
+    ".faq-item__title .faq-item__action .icon-minus"
+  );
+  firstPlusIcon.style.display = "none";
+  firstMinusIcon.style.display = "block";
 };
 
 function handleClick() {
